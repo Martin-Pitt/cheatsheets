@@ -184,6 +184,18 @@ Markup
 ```
 {: data-line="1,2,4,6,8"}
 
+### Linking Files
+
+```
+{{ site.baseurl }}{% link news/index.html %}
+```
+{: data-line="1"}
+
+```
+[Link to a file]({{ site.baseurl }}{% link /assets/files/doc.pdf %})
+```
+{: data-link="1"}
+
 ### Includes (partials)
 
 ```
@@ -451,6 +463,8 @@ See: [Blogging](http://jekyllrb.com/docs/posts/)
 ### Image paths
 
     ![My helpful screenshot]({{ site.url }}/assets/screenshot.jpg)
+
+    ![My helpful screenshot]({{ site.url }}{% link assets/screenshot.jpg %}
 
 See: [Image paths](http://jekyllrb.com/docs/posts/#including-images-and-resources)
 
